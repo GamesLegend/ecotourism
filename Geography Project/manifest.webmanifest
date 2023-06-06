@@ -1,0 +1,6 @@
+{
+  "icons": [
+    { "src": "img/hill.png", "type": "img/png", "sizes": "64x64" },
+    { "src": "img/big-hill.png", "type": "img/png", "sizes": "512x512" }
+  ]
+}
