@@ -76,7 +76,16 @@ p {
   justify-content: space-between;
 }
 
-.navbar-ul {
+.hamburger {
+  display: none;
+}
+
+.navbar-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-ul ul {
   display: flex;
   gap: 2.4rem;
   list-style: none;
@@ -115,7 +124,7 @@ p {
   text-align: center;
   max-width: 80rem;
   margin: 0 auto;
-  padding-top: 9.6rem;
+  padding: 9.6rem 1rem 0 1rem;
 }
 
 .main-heading {
@@ -249,7 +258,6 @@ ALL DESTINATIONS
 .all-destinations-img {
   height: 100%;
 }
-
 .all-destination-img {
   border-radius: 1rem;
 }
@@ -353,13 +361,13 @@ footer {
   list-style: none;
 }
 
-.creators {
+/* .creators {
   font-size: 1.8rem;
   font-weight: 500;
   color: #fff;
   margin-top: 3.2rem;
   text-align: center;
-}
+} */
 
 /* ******************* */
 /* MEDIA QUERIES */
@@ -386,6 +394,55 @@ footer {
 }
 
 @media (max-width: 46.875em) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger .line {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+
+  .navbar-btn:link,
+  .navbar-btn:visited {
+    display: none;
+  }
+
+  .navbar-ul {
+    height: 0;
+    position: absolute;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #007f5f;
+    transition: all 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .navbar-ul.active {
+    height: 80vh;
+  }
+  .navbar-ul ul {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  .navbar-ul.active ul {
+    opacity: 1;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 3.6rem;
+  }
+
   .top-destinations-container {
     grid-template-columns: 1fr;
     column-gap: 2rem;
@@ -413,16 +470,12 @@ footer {
     justify-items: center;
   }
 
-  .top-destination-img {
-    width: 50rem;
-    height: 30rem;
-  }
-
   .secondary-heading {
     text-align: center;
   }
 
-  .destination-img {
+  .all-destinations-img,
+  .top-destination-img {
     width: 60rem;
     height: 40rem;
   }
@@ -437,13 +490,31 @@ footer {
 }
 
 @media (max-width: 40em) {
-  .top-destination-img {
-    width: 40rem;
-    height: 20rem;
-  }
-
-  .destination-img {
+  .top-destination-img,
+  .all-destinations-img {
     width: 50rem;
     height: 30rem;
+  }
+}
+
+@media (max-width: 26.25em) {
+  .top-destination-img,
+  .all-destinations-img {
+    width: 35rem;
+    height: 25rem;
+  }
+
+  .all-destinations {
+    row-gap: 4.8rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links-box {
+    flex-direction: column;
+    text-align: center;
   }
 }

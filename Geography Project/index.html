@@ -18,13 +18,23 @@
             <a href="#">
               <img src="img/hill.png" alt="logo" />
             </a>
-            <ul class="navbar-ul">
-              <li><a href="#" class="links">მთავარი</a></li>
-              <li><a href="#best" class="links">საუკეთესო</a></li>
-              <li><a href="#all-destinations" class="links">ტურები</a></li>
-              <li><a href="#creators" class="links">შემქმნელები</a></li>
-            </ul>
-            <a href="#all-destinations" class="btn">მიმოხილვა</a>
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <div class="navbar-ul">
+              <ul>
+                <li><a href="#" class="links navbar-link">მთავარი</a></li>
+                <li><a href="#best" class="links navbar-link">საუკეთესო</a></li>
+                <li>
+                  <a href="#all-destinations" class="links navbar-link"
+                    >ტურები</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="#all-destinations" class="btn navbar-btn">მიმოხილვა</a>
           </nav>
         </header>
         <div class="hero-text-box">
@@ -49,11 +59,18 @@
                 <p class="rating-p">4.9</p>
               </span>
               <a href="/batumi.html" class="top-destination-img">
-                <img
-                  class="top-destination-img"
-                  src="img/Best destinations/Batumi.jpg"
-                  alt="top destination"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 46.875em)"
+                    srcset="img/Best-destinations/batumi_mobile.jpg"
+                    class="top-destination-img"
+                  />
+                  <img
+                    class="top-destination-img"
+                    src="img/Best-destinations/Batumi.jpg"
+                    alt="top destination"
+                  />
+                </picture>
               </a>
               <span class="destination-title">
                 <p class="destination-title-p">ბათუმი</p>
@@ -63,10 +80,11 @@
               <span class="destination-rating">
                 <p class="rating-p">4.6</p>
               </span>
+
               <a href="#" class="top-destination-img">
                 <img
                   class="top-destination-img"
-                  src="img//Best destinations/Telavi.jpg"
+                  src="img//Best-destinations/Telavi.jpg"
                   alt="top destination"
                 />
               </a>
@@ -79,11 +97,18 @@
                 <p class="rating-p">4.8</p>
               </span>
               <a href="tbilisi.html" class="top-destination-img">
-                <img
-                  class="top-destination-img"
-                  src="img/Best destinations/Tbilisi.jpg"
-                  alt="top destination"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 46.875em)"
+                    srcset="img/Best-destinations/tbilisi_mobile.jpg"
+                    class="top-destination-img"
+                  />
+                  <img
+                    class="top-destination-img"
+                    src="img/Best-destinations/Tbilisi.jpg"
+                    alt="top destination"
+                  />
+                </picture>
               </a>
               <span class="destination-title">
                 <p class="destination-title-p">თბილისი</p>
@@ -96,7 +121,7 @@
               <a href="#" class="top-destination-img">
                 <img
                   class="top-destination-img"
-                  src="img/Best destinations/Guria.jpg"
+                  src="img/Best-destinations/Guria.jpg"
                   alt="top destination"
                 />
               </a>
@@ -111,7 +136,7 @@
               <a href="#" class="top-destination-img">
                 <img
                   class="top-destination-img"
-                  src="img/Best destinations/Borjomi.jpg"
+                  src="img/Best-destinations/Borjomi.jpg"
                   alt="top destination"
                 />
               </a>
@@ -126,7 +151,7 @@
               <a href="gonio.html" class="top-destination-img">
                 <img
                   class="top-destination-img"
-                  src="img/Best destinations/Gonio.jpg"
+                  src="img/Best-destinations/Gonio.jpg"
                   alt="top destination"
                 />
               </a>
@@ -278,8 +303,7 @@
         </div>
       </section>
     </main>
-    <footer id="creators">
-      <!-- <h2 class="footer-secondary-heading">ტურების სია</h2> -->
+    <footer>
       <div class="footer-container">
         <a href="#">
           <img src="img/hill.png" alt="logo" />
@@ -326,10 +350,11 @@
           </div>
         </div>
       </div>
-      <p class="creators">
+      <!-- <p class="creators">
         შემქმნელები: ალექსანდრე სიმონოვი, გიორგი იასაღაშვილი, ირაკლი
         კინწურაშვილი
-      </p>
+      </p> -->
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

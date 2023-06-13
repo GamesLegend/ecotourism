@@ -26,11 +26,6 @@ body {
 }
 
 .section-hero-gonio {
-  /* background-image: linear-gradient(
-      rgba(34, 34, 34, 0.4),
-      rgba(34, 34, 34, 0.4)
-    ),
-    url(img/Separate-page-images/gonio-images/gonio); */
   background-image: url(img/Separate-page-images/gonio-images/gonio);
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +38,6 @@ body {
       rgba(34, 34, 34, 0.2)
     ),
     url(img/Separate-page-images/tbilisi-images/tbilisi.jpg);
-  /* background-image: url(img/Separate-page-images/tbilisi-images/tbilisi.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
